@@ -5,6 +5,7 @@ import com.macro.mall.tiny.common.api.CommonResult;
 import com.macro.mall.tiny.mbg.model.PmsBrand;
 import com.macro.mall.tiny.service.PmsBrandService;
 import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiParam;
 import org.slf4j.Logger;
@@ -38,6 +39,7 @@ public class PmsBrandController {
     }
 
     @ApiOperation("添加品牌")
+//    @ApiImplicitParam(name = "pmsBrand", value = "品牌信息", dataType = "PmsBrand")
     @RequestMapping(value = "/create", method = RequestMethod.POST)
     @ResponseBody
     public CommonResult createBrand(@RequestBody PmsBrand pmsBrand) {

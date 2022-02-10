@@ -1,8 +1,10 @@
 package com.macro.mall.tiny.mbg.model;
 
+import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import java.io.Serializable;
 
+@ApiModel(description = "品牌信息")
 public class PmsBrand implements Serializable {
     private Long id;
 
